@@ -1,20 +1,21 @@
 body {
-    background-color: #50514d;
+    background-color: #50514d; position: center;
     color: #ffffff;
     font-family: "Century Gothic";
-    font-size:13px;
-    margin: 0 auto;
+    font-size: 13px;
+    margin: auto auto;
     padding: 10px 10px 10px 10px;
     text-align: center;
-    width: 1080px;
+    max-width: 1080px;
+    border: solid;
 }
 #header-1 {
     background-color: #191272;
-    border: solid 3px #ffffff;
+    border: solid #ffffff;
     padding: inherit;
 }
 .nav-1 {
-    border: solid 3px #ffffff;
+    border: solid #ffffff;
     padding: 10px 10px 10px 10px;
     margin: inherit;
 }
@@ -26,7 +27,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 42pc;
-    width: 25%;
+    min-width: 15pc;
 }
 #section-right {
     background-color: #191272;
@@ -36,40 +37,41 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 42pc;
-    width: 70%;
+    min-width: 70%;
 }
 .p-1 {
-    border: solid 3px #ffffff;
+    border: solid #ffffff;
     padding: 10px 10px 10px 10px;
 }
 #footer {
     background-color: #191272;
+    border: solid;
+    padding: 10px 10px 10px 10px;
 }
 .borders {
-    border: solid 3px #ffffff;
+    border: solid #ffffff;
     padding: 10px 10px 10px 10px;
     margin:inherit;
 }
 .borders-2 {
-    border: solid 3px #ffffff;
+    border: solid #ffffff;
     padding: 10px 10px 10px 10px;
     margin:inherit;
     background-color: #ff0092;
 }
 .borders-3 {
-    border: solid 3px #ffffff;
+    border: solid #ffffff;
     padding: 10px 10px 10px 10px;
     margin:inherit;
     background-color: #0044ff;
 }
 aside {
-    width: 40%;
-    width: 330px;
+    width: 45%;
     height: 50px;
     float: right;
 }
 #minus-width {
-    width: 40%;
+    width: 45%;
     height: 50px;
     float: left;
 }
