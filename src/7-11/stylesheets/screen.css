@@ -23,25 +23,30 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
 }
+
 /* line 22, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
+
 /* line 24, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
+
 /* line 26, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* line 28, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
+
 /* line 30, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
@@ -51,44 +56,122 @@ q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
+
 /* line 32, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
+
 /* line 116, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
-/* line 10, ../sass/screen.scss */
+
+/* line 7, ../sass/screen.scss */
 body {
-  width: 5em;
+  background: #ffffff url("../img/header_bg.png") repeat-x right top;
 }
-/* line 22, ../sass/screen.scss */
-footer, header {
-  border: solid 1px #ffffff;
+
+/* line 10, ../sass/screen.scss */
+#header_bg {
+  text-align: center;
+}
+
+/* line 13, ../sass/screen.scss */
+#logo_bg {
+  background-color: #ffffff;
+  padding: 0px 20px 0px 20px;
+}
+
+/* line 17, ../sass/screen.scss */
+.clearfix {
+  overflow: auto;
   clear: both;
-  display: block;
-  margin: 5px 0;
-  padding: 5px 10px;
 }
-/* line 27, ../sass/screen.scss */
-#nav .side {
-  float: right;
-  width: 320px;
+
+/* line 22, ../sass/screen.scss */
+nav#nav1 {
+  margin: 30px auto;
+  border: 2px solid #0c6c43;
+  width: 80%;
+  text-align: center;
 }
-/* line 32, ../sass/screen.scss */
-nav {
-  width: auto;
+/* line 28, ../sass/screen.scss */
+nav#nav1 ul li {
+  display: inline-block;
 }
-/* line 34, ../sass/screen.scss */
-nav ul {
-  width: 10px;
+/* line 30, ../sass/screen.scss */
+nav#nav1 ul li:hover {
+  background: url("../img/link_hover.png") no-repeat center bottom;
 }
-/* line 36, ../sass/screen.scss */
-nav ul li {
-  width: 10px;
-}
-/* line 38, ../sass/screen.scss */
-nav ul li a {
+/* line 33, ../sass/screen.scss */
+nav#nav1 ul li a {
   text-decoration: none;
+  color: #0c6c43;
+  font: 30px Arial;
+  display: block;
+  padding: 20px 50px 20px 50px;
+}
+
+/* line 46, ../sass/screen.scss */
+section#sec1 {
+  width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+/* line 52, ../sass/screen.scss */
+div {
+  margin: auto;
+  font: 13px Arial;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px;
+  -moz-box-shadow: 0px;
+  box-shadow: 0px 0px 20px 1px #5c5c5c;
+}
+
+/* line 62, ../sass/screen.scss */
+.form-style-2-heading {
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font: 25px Arial;
+  padding-bottom: 3px;
+}
+
+/* line 69, ../sass/screen.scss */
+.form-style-2 .tel-number-field {
+  width: 100px;
+  text-align: center;
+}
+
+/* line 73, ../sass/screen.scss */
+.textarea-field {
+  height: 50px;
+  width: 55%;
+  background-color: #e0e0e0;
+  border-color: transparent;
+}
+
+/* line 80, ../sass/screen.scss */
+.form-style-2 {
+  font: 20px Arial;
+}
+/* line 82, ../sass/screen.scss */
+.form-style-2 label {
+  display: block;
+  margin: 0px 0px 15px 0px;
+}
+/* line 85, ../sass/screen.scss */
+.form-style-2 label span {
+  width: 100px;
+  display: inline-block;
+  padding-right: 10px;
+}
+/* line 90, ../sass/screen.scss */
+.form-style-2 label input {
+  display: inline-block;
+  margin: 10px 5px 10px 5px;
+  width: 55%;
 }

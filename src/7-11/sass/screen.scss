@@ -1,0 +1,96 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+body {
+  background: #ffffff url("../img/header_bg.png") repeat-x right top;
+}
+#header_bg {
+  text-align: center;
+}
+#logo_bg {
+  background-color: #ffffff;
+  padding: 0px 20px 0px 20px;
+}
+.clearfix {
+  overflow: auto;
+  clear: both;
+}
+nav{
+  &#nav1{
+    margin: 30px auto;
+    border: 2px solid rgb(12, 108, 67);
+    width: 80%;
+    text-align: center;
+    ul{
+      li{
+        display:inline-block;
+        &:hover{
+          background: url("../img/link_hover.png") no-repeat center bottom;
+        }
+        a {
+          text-decoration: none;
+          color: rgb(12, 108, 67);
+          font: 30px Arial;
+          display: block;
+          padding: 20px 50px 20px 50px;
+        }
+      }
+    }
+  }
+}
+
+section {
+  &#sec1 {
+    width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+  }
+}
+div {
+  margin: auto;
+  font: 13px Arial;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px;
+  -moz-box-shadow: 0px;
+  box-shadow: 0px 0px 20px 1px #5c5c5c;
+}
+.form-style-2-heading{
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font: 25px Arial;
+  padding-bottom: 3px;
+}
+
+.form-style-2 .tel-number-field{
+  width: 100px;
+  text-align: center;
+}
+.textarea-field{
+  height: 50px;
+  width: 55%;
+  background-color: #e0e0e0;
+  border-color: transparent;
+}
+
+.form-style-2 {
+  font: 20px Arial;
+  label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+    span{
+      width: 100px;
+      display: inline-block;
+      padding-right: 10px;
+    }
+    input{
+      display: inline-block;
+      margin: 10px 5px 10px 5px;
+      width: 55%;
+    }
+  }
+}
