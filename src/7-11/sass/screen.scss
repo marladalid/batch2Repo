@@ -4,11 +4,29 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 body {
-  background: #ffffff url("../img/header_bg.png") repeat-x right top;
+  display: block;
+  margin-top: 30px;
+  p{
+    &#paraBold {
+      margin: auto;
+      text-align: center;
+      font: bold 35px 'PT Sans', sans-serif;
+      width: 70%;
+    }
+    &#paraRegular {
+      margin: auto;
+      text-align: center;
+      font: 25px 'PT Sans', sans-serif;
+      width: 70%;
+      padding: 15px 0 50px 0;
+    }
+  }
 }
 #header_bg {
   text-align: center;
+  background: #ffffff url("../img/header_bg.png") repeat-x right top;
 }
 #logo_bg {
   background-color: #ffffff;
@@ -21,7 +39,7 @@ body {
 nav{
   &#nav1{
     margin: 30px auto;
-    border: 2px solid rgb(12, 108, 67);
+    border: 3px solid rgb(12, 108, 67);
     width: 80%;
     text-align: center;
     ul{
@@ -33,9 +51,9 @@ nav{
         a {
           text-decoration: none;
           color: rgb(12, 108, 67);
-          font: 30px Arial;
+          font: 30px 'PT Sans', sans-serif;
           display: block;
-          padding: 20px 50px 20px 50px;
+          padding: 20px 60px 20px 60px;
         }
       }
     }
@@ -44,53 +62,117 @@ nav{
 
 section {
   &#sec1 {
-    width: 600px;
+    width: 540px;
     margin: auto;
     background-color: #ffffff;
   }
+  div {
+    margin: auto;
+    font: 20px 'PT Sans', sans-serif;
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px;
+    -moz-box-shadow: 0px;
+    box-shadow: 0px 0px 20px 1px #5c5c5c;
+    img {
+      float: left;
+      margin: -150px 0 0 -200px
+    }
+  }
 }
-div {
-  margin: auto;
-  font: 13px Arial;
-  max-width: 500px;
-  padding: 20px 12px 10px 20px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px;
-  -moz-box-shadow: 0px;
-  box-shadow: 0px 0px 20px 1px #5c5c5c;
-}
-.form-style-2-heading{
-  font-weight: bolder;
+article{
   margin-bottom: 20px;
-  font: 25px Arial;
-  padding-bottom: 3px;
+  font: bold 30px 'PT Sans', sans-serif;
+  color: #ff0005;
 }
 
-.form-style-2 .tel-number-field{
-  width: 100px;
-  text-align: center;
-}
 .textarea-field{
   height: 50px;
-  width: 55%;
+  width: 60%;
   background-color: #e0e0e0;
   border-color: transparent;
+  font-size: 17px;
 }
 
-.form-style-2 {
-  font: 20px Arial;
-  label{
-    display: block;
-    margin: 0px 0px 15px 0px;
-    span{
-      width: 100px;
-      display: inline-block;
-      padding-right: 10px;
+.textarea-field-month{
+  height: 30px;
+  width: 23%;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  border-color: transparent;
+  font-size: 17px;
+  margin:5px;
+}
+
+.textarea-field-day{
+  height: 30px;
+  width: 16%;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  border-color: transparent;
+  font-size: 17px;
+  margin:5px;
+}
+
+.textarea-field-year{
+  height: 30px;
+  width: 16%;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  border-color: transparent;
+  font-size: 17px;
+  margin: -5px 5px -5px 5px;
+}
+
+div {
+  &#form-style-2 {
+    font: 20px 'PT Sans', sans-serif;
+    label {
+      display: block;
+      margin: 0px 0px 15px 0px;
+
+      &.paraSmall {
+        margin-left: 50px;
+        text-align: left;
+        display: block;
+        font: 15px 'PT Sans', sans-serif;
+      }
+      span {
+        width: 150px;
+        display: inline-block;
+        padding-right: 5px;
+        text-align: right;
+      }
+      input {
+        display: inline-block;
+        margin: 5px 10px;
+        width: 60%;
+      }
     }
-    input{
-      display: inline-block;
-      margin: 10px 5px 10px 5px;
-      width: 55%;
+    input[type=checkbox]{
+      width: 20%;
+      height: 20px;
+      background-color: #e0e0e0;
+      border-color: transparent;
+    }
+
+    input[type=submit],
+    input[type=button] {
+      background: #ef2b2f;
+      width: 40%;
+      height: 50px;
+      float: right;
+      border-radius: 5px;
+      font: 20px 'PT Sans', sans-serif;
+      color: white;
+      margin-right: 33px;
+      border-color: transparent;
+    }
+    input[type=submit]:hover,
+    input[type=button]:hover {
+      background: #EA7B00;
+      color: #fff;
     }
   }
 }
