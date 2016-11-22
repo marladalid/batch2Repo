@@ -14,7 +14,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -53,7 +53,10 @@ q, blockquote {
   quotes: none;
 }
 /* line 103, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
 
 /* line 32, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
@@ -61,7 +64,7 @@ a img {
 }
 
 /* line 116, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -96,7 +99,7 @@ body p#paraRegular {
 /* line 48, ../sass/screen.scss */
 #logo_bg {
   background-color: #ffffff;
-  padding: 0 20px 0 20px;
+  padding: 0px 20px 0px 20px;
 }
 
 /* line 52, ../sass/screen.scss */
@@ -373,19 +376,19 @@ div#form-style-2 {
   max-width: 500px;
   padding: 20px 12px 10px 20px;
   border-radius: 5px;
-  -webkit-box-shadow: 0;
-  -moz-box-shadow: 0;
-  box-shadow: 0 0 20px 1px #5c5c5c;
+  -webkit-box-shadow: 0px;
+  -moz-box-shadow: 0px;
+  box-shadow: 0px 0px 20px 1px #5c5c5c;
 }
 /* line 275, ../sass/screen.scss */
 div#form-style-2 label.labelDown {
   display: block;
-  margin: 0 0 15px 0;
+  margin: 0px 0px 15px 0px;
 }
 /* line 279, ../sass/screen.scss */
 div#form-style-2 label.labelSide {
   display: inline;
-  margin: 0 0 15px 0;
+  margin: 0px 0px 15px 0px;
 }
 /* line 283, ../sass/screen.scss */
 div#form-style-2 label.paraSmall {
