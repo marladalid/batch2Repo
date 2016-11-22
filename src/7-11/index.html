@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="stylesheets\screen.css" />
 </head>
 <body>
-    <header id="header_bg"><a href="#"><img id="logo_bg" src="img/logo.png" alt="Text/Photo" /></a></header>
+<header id="header_bg"><a href="#" title="7 Elevel"><img id="logo_bg" src="img/logo.png" alt="Text/Photo"/></a></header>
         <nav id="nav1">
             <ul class="clearfix">
                 <li><a href="#" >Praesentium</a></li>
@@ -22,10 +22,13 @@
         <article>Registration Form</article>
         <div id="form-style-2">
             <form class="clearfix">
-                <label><span>Name</span><input type="text" class="textarea-field" name="field1" value="" /></label>
-                <label><span>Email</span><input type="text" class="textarea-field" name="field2" value="" /></label>
-                <label><span>Mobile Number</span><input type="text" class="textarea-field" name="tel_no" value="" maxlength="11" /></label>
-                <label><span>Date of Birth</span>
+                <label class="labelDown">
+                    <span>Name</span>
+                    <input type="text" class="textarea-field" name="field1" value="" />
+                </label>
+                <label class="labelDown"><span>Email</span><input type="text" class="textarea-field" name="field2" value="" /></label>
+                <label class="labelDown"><span>Mobile Number</span><input type="text" class="textarea-field" name="tel_no" value="" maxlength="11" /></label>
+                <label class="select labelDown"><span>Date of Birth</span>
                 <select class="textarea-field-month" name="DOBMonth">
                     <option> MONTH </option>
                     <option value="January">January</option>
@@ -41,6 +44,7 @@
                     <option value="November">November</option>
                     <option value="December">December</option>
                 </select>
+                    <span id="arrMonth" class="select__arrow"></span>
 
                 <select class="textarea-field-day" name="DOBDay">
                     <option> DAY </option>
@@ -76,6 +80,7 @@
                     <option value="30">30</option>
                     <option value="31">31</option>
                 </select>
+                    <span id="arrDay" class="select__arrow"></span>
 
                 <select class="textarea-field-year" name="DOBYear">
                     <option> YEAR </option>
@@ -134,14 +139,68 @@
                     <option value="1948">1948</option>
                     <option value="1947">1947</option>
                 </select>
+                    <span id="arrYear" class="select__arrow"></span>
                 </label>
-                <label><span>Gender</span></label>
-                <label class="paraSmall"><span><input type="checkbox" value=""/></span>Proin sit amet lectus venenatis, consectetur<br>magna vitae, convallis diam. Nullam iaculis.</label>
-                <label class="clearfix"><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+                <label class="labelDown">
+                <span id="spGender">Gender</span>
+                <span id="control-group">
+                        <div>
+                            <label class="control control--radio labelSide">Male
+                                <input type="radio" name="radio" checked="checked"/>
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio labelSide">Female
+                                <input type="radio" name="radio"/>
+                                <div class="control__indicator"></div>
+                            </label>
+                        </div>
+                </span>
+                </label>
+                <label class="paraSmall labelDown"><span id="sp1"><input type="checkbox" value=""/></span><span id="sp2">Proin sit amet lectus venenatis, consectetur magna vitae, convallis diam. Nullam iaculis.</span></label>
+                <label class="clearfix labelDown"><span>&nbsp;</span><input type="submit" value="Submit" /></label>
 
             </form>
             <img src="img/cards.png">
         </div>
     </section>
+
+    <!--START OF FOOTER-->
+    <!--footer starts here-->
+    <footer>
+        <nav id="nav2" class="nav2">SUSPENDISSE
+            <ul>
+                <li class="li2"><a class="link_nav2"  href="#">Praesentium</a></li>
+                <li class="li2"><a class="link_nav2"  href="#">Voluptatum</a></li>
+                <li class="li2"><a class="link_nav2"  href="#">Dignissimos</a></li>
+                <li class="li2"><a class="link_nav2"  href="#">Blanditiis</a></li>
+            </ul>
+        </nav>
+        <nav id="nav3" class="nav2">PORTA
+            <ul class="ul2">
+                <li class="li2"><a class="link_nav2" href="#">Mauris </a></li>
+                <li class="li2"><a class="link_nav2"  href="#">Suscipit </a></li>
+                <li class="li2"><a class="link_nav2" href="#">At ipsum</a></li>
+                <li class="li2"><a class="link_nav2" href="#">Vehicula</a></li>
+            </ul>
+        </nav>
+        <nav id="nav4" class="nav2">FEUGIAT
+            <ul class="ul2">
+                <li class="li2"><a class="link_nav2" href="#">Pellentesque</a></li>
+                <li class="li2"><a class="link_nav2" href="#">Accumsan </a></li>
+                <li class="li2"><a class="link_nav2" href="#">Velit in urna</a></li>
+                <li class="li2"><a class="link_nav2" href="#">Faucibus </a></li>
+            </ul>
+        </nav>
+        <nav id="nav5" class="nav2">PLACERAT
+            <ul class="ul2">
+                <li class="li2"><a class="link_nav2" href="#">Vitae</a></li>
+                <li class="li2"><a class="link_nav2" href="#">Convallis</a></li>
+                <li class="li2"><a class="link_nav2" href="#">Augue </a></li>
+                <li class="li2"><a class="link_nav2" href="#">Aliquam</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <!--END OF FOOTER-->
+
 </body>
 </html>

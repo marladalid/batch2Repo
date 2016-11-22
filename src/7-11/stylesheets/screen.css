@@ -14,7 +14,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -53,10 +53,7 @@ q, blockquote {
   quotes: none;
 }
 /* line 103, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+
 
 /* line 32, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
@@ -64,23 +61,24 @@ a img {
 }
 
 /* line 116, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 8, ../sass/screen.scss */
+/*footer SASS variables*/
+/* line 25, ../sass/screen.scss */
 body {
   display: block;
   margin-top: 30px;
 }
-/* line 12, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 body p#paraBold {
   margin: auto;
   text-align: center;
   font: bold 35px 'PT Sans', sans-serif;
   width: 70%;
 }
-/* line 18, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 body p#paraRegular {
   margin: auto;
   text-align: center;
@@ -89,40 +87,40 @@ body p#paraRegular {
   padding: 15px 0 50px 0;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 #header_bg {
   text-align: center;
   background: #ffffff url("../img/header_bg.png") repeat-x right top;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 #logo_bg {
   background-color: #ffffff;
-  padding: 0px 20px 0px 20px;
+  padding: 0 20px 0 20px;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .clearfix {
   overflow: auto;
   clear: both;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 nav#nav1 {
   margin: 30px auto;
   border: 3px solid #0c6c43;
   width: 80%;
   text-align: center;
 }
-/* line 46, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 nav#nav1 ul li {
   display: inline-block;
 }
-/* line 48, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 nav#nav1 ul li:hover {
   background: url("../img/link_hover.png") no-repeat center bottom;
 }
-/* line 51, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 nav#nav1 ul li a {
   text-decoration: none;
   color: #0c6c43;
@@ -130,38 +128,175 @@ nav#nav1 ul li a {
   display: block;
   padding: 20px 60px 20px 60px;
 }
+/* line 78, ../sass/screen.scss */
+nav#nav2 {
+  display: inline-block;
+  font: 30px 'PT Sans', sans-serif;
+  text-align: left;
+  color: white;
+  left: 0;
+  padding: 30px 5% 30px 5%;
+}
+/* line 80, ../sass/screen.scss */
+nav#nav2 ul {
+  padding-top: 20px;
+}
+/* line 83, ../sass/screen.scss */
+nav#nav2 ul li.li2 {
+  text-align: left;
+  font-size: 25px;
+  list-style: none;
+  color: white;
+}
+/* line 86, ../sass/screen.scss */
+nav#nav2 ul li.li2 a.link_nav2 {
+  color: white;
+  text-decoration: none;
+}
+/* line 89, ../sass/screen.scss */
+nav#nav2 ul li.li2 a.link_nav2:visited {
+  color: white;
+}
+/* line 92, ../sass/screen.scss */
+nav#nav2 ul li.li2 a.link_nav2:hover {
+  text-shadow: 2px 2px 10px #ffffff;
+}
+/* line 95, ../sass/screen.scss */
+nav#nav2 ul li.li2 a.link_nav2:active {
+  color: white;
+}
+/* line 104, ../sass/screen.scss */
+nav#nav3 {
+  display: inline-block;
+  font: 30px 'PT Sans', sans-serif;
+  text-align: left;
+  color: white;
+  left: 0;
+  padding: 30px 5% 30px 5%;
+}
+/* line 106, ../sass/screen.scss */
+nav#nav3 ul {
+  padding-top: 20px;
+}
+/* line 109, ../sass/screen.scss */
+nav#nav3 ul li.li2 {
+  text-align: left;
+  font-size: 25px;
+  list-style: none;
+  color: white;
+}
+/* line 112, ../sass/screen.scss */
+nav#nav3 ul li.li2 a.link_nav2 {
+  color: white;
+  text-decoration: none;
+}
+/* line 115, ../sass/screen.scss */
+nav#nav3 ul li.li2 a.link_nav2:visited {
+  color: white;
+}
+/* line 118, ../sass/screen.scss */
+nav#nav3 ul li.li2 a.link_nav2:hover {
+  text-shadow: 2px 2px 10px #ffffff;
+}
+/* line 121, ../sass/screen.scss */
+nav#nav3 ul li.li2 a.link_nav2:active {
+  color: white;
+}
+/* line 130, ../sass/screen.scss */
+nav#nav4 {
+  display: inline-block;
+  font: 30px 'PT Sans', sans-serif;
+  text-align: left;
+  color: white;
+  left: 0;
+  padding: 30px 5% 30px 5%;
+}
+/* line 132, ../sass/screen.scss */
+nav#nav4 ul {
+  padding-top: 20px;
+}
+/* line 135, ../sass/screen.scss */
+nav#nav4 ul li.li2 {
+  text-align: left;
+  font-size: 25px;
+  list-style: none;
+  color: white;
+}
+/* line 138, ../sass/screen.scss */
+nav#nav4 ul li.li2 a.link_nav2 {
+  color: white;
+  text-decoration: none;
+}
+/* line 141, ../sass/screen.scss */
+nav#nav4 ul li.li2 a.link_nav2:visited {
+  color: white;
+}
+/* line 144, ../sass/screen.scss */
+nav#nav4 ul li.li2 a.link_nav2:hover {
+  text-shadow: 2px 2px 10px #ffffff;
+}
+/* line 147, ../sass/screen.scss */
+nav#nav4 ul li.li2 a.link_nav2:active {
+  color: white;
+}
+/* line 156, ../sass/screen.scss */
+nav#nav5 {
+  display: inline-block;
+  font: 30px 'PT Sans', sans-serif;
+  text-align: left;
+  color: white;
+  left: 0;
+  padding: 30px 5% 30px 5%;
+}
+/* line 158, ../sass/screen.scss */
+nav#nav5 ul {
+  padding-top: 20px;
+}
+/* line 161, ../sass/screen.scss */
+nav#nav5 ul li.li2 {
+  text-align: left;
+  font-size: 25px;
+  list-style: none;
+  color: white;
+}
+/* line 164, ../sass/screen.scss */
+nav#nav5 ul li.li2 a.link_nav2 {
+  color: white;
+  text-decoration: none;
+}
+/* line 167, ../sass/screen.scss */
+nav#nav5 ul li.li2 a.link_nav2:visited {
+  color: white;
+}
+/* line 170, ../sass/screen.scss */
+nav#nav5 ul li.li2 a.link_nav2:hover {
+  text-shadow: 2px 2px 10px #ffffff;
+}
+/* line 173, ../sass/screen.scss */
+nav#nav5 ul li.li2 a.link_nav2:active {
+  color: white;
+}
 
-/* line 64, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 section#sec1 {
   width: 540px;
   margin: auto;
   background-color: #ffffff;
 }
-/* line 69, ../sass/screen.scss */
-section div {
-  margin: auto;
-  font: 20px 'PT Sans', sans-serif;
-  max-width: 500px;
-  padding: 20px 12px 10px 20px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px;
-  -moz-box-shadow: 0px;
-  box-shadow: 0px 0px 20px 1px #5c5c5c;
-}
-/* line 78, ../sass/screen.scss */
-section div img {
+/* line 190, ../sass/screen.scss */
+section img {
   float: left;
-  margin: -150px 0 0 -200px;
+  margin: -210px 0 0 -190px;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 article {
   margin-bottom: 20px;
   font: bold 30px 'PT Sans', sans-serif;
   color: #ff0005;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .textarea-field {
   height: 50px;
   width: 60%;
@@ -170,7 +305,7 @@ article {
   font-size: 17px;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .textarea-field-month {
   height: 30px;
   width: 23%;
@@ -181,7 +316,7 @@ article {
   margin: 5px;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .textarea-field-day {
   height: 30px;
   width: 16%;
@@ -192,7 +327,7 @@ article {
   margin: 5px;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .textarea-field-year {
   height: 30px;
   width: 16%;
@@ -203,43 +338,149 @@ article {
   margin: -5px 5px -5px 5px;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
+.select {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 244, ../sass/screen.scss */
+.select select {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 5px;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  background: #e6e6e6;
+}
+
+/* line 254, ../sass/screen.scss */
+.select__arrow {
+  position: absolute;
+  width: 0;
+  height: 20px;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 7px 0 7px;
+  border-color: #ff5100 transparent transparent transparent;
+}
+
+/* line 265, ../sass/screen.scss */
 div#form-style-2 {
   font: 20px 'PT Sans', sans-serif;
+  margin: auto;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
+  box-shadow: 0 0 20px 1px #5c5c5c;
 }
-/* line 131, ../sass/screen.scss */
-div#form-style-2 label {
+/* line 275, ../sass/screen.scss */
+div#form-style-2 label.labelDown {
   display: block;
-  margin: 0px 0px 15px 0px;
+  margin: 0 0 15px 0;
 }
-/* line 135, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
+div#form-style-2 label.labelSide {
+  display: inline;
+  margin: 0 0 15px 0;
+}
+/* line 283, ../sass/screen.scss */
 div#form-style-2 label.paraSmall {
   margin-left: 50px;
   text-align: left;
   display: block;
   font: 15px 'PT Sans', sans-serif;
 }
-/* line 141, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 div#form-style-2 label span {
   width: 150px;
   display: inline-block;
   padding-right: 5px;
   text-align: right;
 }
-/* line 147, ../sass/screen.scss */
-div#form-style-2 label input {
+/* line 294, ../sass/screen.scss */
+div#form-style-2 label span#sp1 {
+  width: 110px;
   display: inline-block;
+  text-align: right;
+}
+/* line 299, ../sass/screen.scss */
+div#form-style-2 label span#sp2 {
+  width: 300px;
+  display: inline-block;
+  text-align: left;
+}
+/* line 304, ../sass/screen.scss */
+div#form-style-2 label span#sp3 {
+  width: 110px;
+  display: inline-block;
+  text-align: right;
+}
+/* line 309, ../sass/screen.scss */
+div#form-style-2 label span#sp4 {
+  width: 150px;
+  display: inline;
+  text-align: left;
+}
+/* line 314, ../sass/screen.scss */
+div#form-style-2 label span#sp4 {
+  width: 150px;
+  display: inline;
+  text-align: left;
+}
+/* line 319, ../sass/screen.scss */
+div#form-style-2 label span#arrYear {
+  width: 0;
+  height: 0;
+  padding: 0;
+  top: 16px;
+  right: 32px;
+}
+/* line 326, ../sass/screen.scss */
+div#form-style-2 label span#arrMonth {
+  width: 0;
+  height: 0;
+  padding: 0;
+  top: 16px;
+  right: 127px;
+}
+/* line 333, ../sass/screen.scss */
+div#form-style-2 label span#arrDay {
+  width: 0;
+  height: 0;
+  padding: 0;
+  top: 16px;
+  right: 223px;
+}
+/* line 340, ../sass/screen.scss */
+div#form-style-2 label span#spGender {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+}
+/* line 345, ../sass/screen.scss */
+div#form-style-2 label span#control-group {
+  width: 300px;
+  display: inline-block;
+  text-align: left;
+}
+/* line 351, ../sass/screen.scss */
+div#form-style-2 label input {
+  display: inline;
   margin: 5px 10px;
   width: 60%;
 }
-/* line 153, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 div#form-style-2 input[type=checkbox] {
   width: 20%;
   height: 20px;
   background-color: #e0e0e0;
   border-color: transparent;
 }
-/* line 160, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 div#form-style-2 input[type=submit],
 div#form-style-2 input[type=button] {
   background: #ef2b2f;
@@ -247,14 +488,103 @@ div#form-style-2 input[type=button] {
   height: 50px;
   float: right;
   border-radius: 5px;
-  font: 20px 'PT Sans', sans-serif;
+  font: 25px 'PT Sans', sans-serif;
   color: white;
   margin-right: 33px;
   border-color: transparent;
 }
-/* line 172, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 div#form-style-2 input[type=submit]:hover,
 div#form-style-2 input[type=button]:hover {
   background: #EA7B00;
   color: #fff;
+}
+
+/* line 384, ../sass/screen.scss */
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* line 392, ../sass/screen.scss */
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* line 397, ../sass/screen.scss */
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+
+/* line 405, ../sass/screen.scss */
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+
+/* line 408, ../sass/screen.scss */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+
+/* line 412, ../sass/screen.scss */
+.control input:checked ~ .control__indicator {
+  background: #e0e0e0;
+}
+
+/* line 415, ../sass/screen.scss */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #e0e0e0;
+}
+
+/* line 419, ../sass/screen.scss */
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* line 424, ../sass/screen.scss */
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+
+/* line 427, ../sass/screen.scss */
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+
+/* line 430, ../sass/screen.scss */
+.control--radio .control__indicator:after {
+  left: 6px;
+  top: 6px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ff4f00;
+}
+
+/* line 438, ../sass/screen.scss */
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
+}
+
+/*footer SASS codes*/
+/* line 443, ../sass/screen.scss */
+footer {
+  background-color: #006B41;
+  margin: 130px auto 0 auto;
+  text-align: center;
 }
