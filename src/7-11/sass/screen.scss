@@ -43,7 +43,7 @@ body {
 }
 #header_bg {
   text-align: center;
-  background: #ffffff url("../img/header_bg.png") repeat-x right top;
+  background: url("../img/header_bg.png") repeat-x right top;
 }
 #logo_bg {
   background-color: #ffffff;
@@ -57,7 +57,7 @@ nav{
   &#nav1{
     margin: 30px auto;
     border: 3px solid rgb(12, 108, 67);
-    width: 80%;
+    width: 1100px;
     text-align: center;
     ul{
       li{
@@ -262,6 +262,41 @@ article{
 }
 
 div {
+  &#video-container {
+
+    &.controller-btn{
+      &.btn {
+        background: #ef2b2f;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        font: 25px 'PT Sans', sans-serif;
+        color: white;
+        border-color: transparent;
+      }
+    }
+  }
+
+  &#top-container {
+    display: none;
+    background-color: gray;
+    height: 70px;
+    margin-bottom: 30px;
+    &.icon {
+      div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+      }
+    }
+    &.right {
+      float: right;
+    }
+    &.left {
+      float: left;
+    }
+  }
   &#form-style-2 {
     font: 20px 'PT Sans', sans-serif;
     margin: auto;
@@ -444,4 +479,36 @@ footer {
   background-color: #006B41;
   margin: 130px auto 0 auto;
   text-align: center;
+}
+
+//1300, 979, 767, 480
+
+@media only screen and (max-width: 1300px) {
+  #top-container {
+    display: none;
+  }
+  nav#nav1 {
+    width: 90%;
+    ul{
+      li{
+        a{
+          padding: 20px 30px 20px 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  nav#nav1{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
 }

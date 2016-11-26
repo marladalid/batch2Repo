@@ -93,7 +93,7 @@ body p#paraRegular {
 /* line 44, ../sass/screen.scss */
 #header_bg {
   text-align: center;
-  background: #ffffff url("../img/header_bg.png") repeat-x right top;
+  background: url("../img/header_bg.png") repeat-x right top;
 }
 
 /* line 48, ../sass/screen.scss */
@@ -112,7 +112,7 @@ body p#paraRegular {
 nav#nav1 {
   margin: 30px auto;
   border: 3px solid #0c6c43;
-  width: 80%;
+  width: 1100px;
   text-align: center;
 }
 /* line 63, ../sass/screen.scss */
@@ -369,7 +369,39 @@ article {
   border-color: #ff5100 transparent transparent transparent;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
+div#video-container.controller-btn.btn {
+  background: #ef2b2f;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  font: 25px 'PT Sans', sans-serif;
+  color: white;
+  border-color: transparent;
+}
+/* line 280, ../sass/screen.scss */
+div#top-container {
+  display: none;
+  background-color: gray;
+  height: 70px;
+  margin-bottom: 30px;
+}
+/* line 286, ../sass/screen.scss */
+div#top-container.icon div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+/* line 293, ../sass/screen.scss */
+div#top-container.right {
+  float: right;
+}
+/* line 296, ../sass/screen.scss */
+div#top-container.left {
+  float: left;
+}
+/* line 300, ../sass/screen.scss */
 div#form-style-2 {
   font: 20px 'PT Sans', sans-serif;
   margin: auto;
@@ -380,61 +412,61 @@ div#form-style-2 {
   -moz-box-shadow: 0px;
   box-shadow: 0px 0px 20px 1px #5c5c5c;
 }
-/* line 275, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 div#form-style-2 label.labelDown {
   display: block;
   margin: 0px 0px 15px 0px;
 }
-/* line 279, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 div#form-style-2 label.labelSide {
   display: inline;
   margin: 0px 0px 15px 0px;
 }
-/* line 283, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 div#form-style-2 label.paraSmall {
   margin-left: 50px;
   text-align: left;
   display: block;
   font: 15px 'PT Sans', sans-serif;
 }
-/* line 289, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 div#form-style-2 label span {
   width: 150px;
   display: inline-block;
   padding-right: 5px;
   text-align: right;
 }
-/* line 294, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 div#form-style-2 label span#sp1 {
   width: 110px;
   display: inline-block;
   text-align: right;
 }
-/* line 299, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 div#form-style-2 label span#sp2 {
   width: 300px;
   display: inline-block;
   text-align: left;
 }
-/* line 304, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 div#form-style-2 label span#sp3 {
   width: 110px;
   display: inline-block;
   text-align: right;
 }
-/* line 309, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 div#form-style-2 label span#sp4 {
   width: 150px;
   display: inline;
   text-align: left;
 }
-/* line 314, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 div#form-style-2 label span#sp4 {
   width: 150px;
   display: inline;
   text-align: left;
 }
-/* line 319, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 div#form-style-2 label span#arrYear {
   width: 0;
   height: 0;
@@ -442,7 +474,7 @@ div#form-style-2 label span#arrYear {
   top: 16px;
   right: 32px;
 }
-/* line 326, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 div#form-style-2 label span#arrMonth {
   width: 0;
   height: 0;
@@ -450,7 +482,7 @@ div#form-style-2 label span#arrMonth {
   top: 16px;
   right: 127px;
 }
-/* line 333, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 div#form-style-2 label span#arrDay {
   width: 0;
   height: 0;
@@ -458,32 +490,32 @@ div#form-style-2 label span#arrDay {
   top: 16px;
   right: 223px;
 }
-/* line 340, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 div#form-style-2 label span#spGender {
   width: 150px;
   display: inline-block;
   text-align: right;
 }
-/* line 345, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 div#form-style-2 label span#control-group {
   width: 300px;
   display: inline-block;
   text-align: left;
 }
-/* line 351, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 div#form-style-2 label input {
   display: inline;
   margin: 5px 10px;
   width: 60%;
 }
-/* line 357, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 div#form-style-2 input[type=checkbox] {
   width: 20%;
   height: 20px;
   background-color: #e0e0e0;
   border-color: transparent;
 }
-/* line 364, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 div#form-style-2 input[type=submit],
 div#form-style-2 input[type=button] {
   background: #ef2b2f;
@@ -496,14 +528,14 @@ div#form-style-2 input[type=button] {
   margin-right: 33px;
   border-color: transparent;
 }
-/* line 376, ../sass/screen.scss */
+/* line 411, ../sass/screen.scss */
 div#form-style-2 input[type=submit]:hover,
 div#form-style-2 input[type=button]:hover {
   background: #EA7B00;
   color: #fff;
 }
 
-/* line 384, ../sass/screen.scss */
+/* line 419, ../sass/screen.scss */
 .control {
   display: block;
   position: relative;
@@ -513,14 +545,14 @@ div#form-style-2 input[type=button]:hover {
   font-size: 18px;
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 .control input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-/* line 397, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .control__indicator {
   position: absolute;
   top: 2px;
@@ -530,46 +562,46 @@ div#form-style-2 input[type=button]:hover {
   background: #e6e6e6;
 }
 
-/* line 405, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 .control--radio .control__indicator {
   border-radius: 50%;
 }
 
-/* line 408, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
   background: #ccc;
 }
 
-/* line 412, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .control input:checked ~ .control__indicator {
   background: #e0e0e0;
 }
 
-/* line 415, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 .control:hover input:not([disabled]):checked ~ .control__indicator,
 .control input:checked:focus ~ .control__indicator {
   background: #e0e0e0;
 }
 
-/* line 419, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .control__indicator:after {
   content: '';
   position: absolute;
   display: none;
 }
 
-/* line 424, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .control input:checked ~ .control__indicator:after {
   display: block;
 }
 
-/* line 427, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .control--checkbox input:disabled ~ .control__indicator:after {
   border-color: #7b7b7b;
 }
 
-/* line 430, ../sass/screen.scss */
+/* line 465, ../sass/screen.scss */
 .control--radio .control__indicator:after {
   left: 6px;
   top: 6px;
@@ -579,15 +611,37 @@ div#form-style-2 input[type=button]:hover {
   background: #ff4f00;
 }
 
-/* line 438, ../sass/screen.scss */
+/* line 473, ../sass/screen.scss */
 .control--radio input:disabled ~ .control__indicator:after {
   background: #7b7b7b;
 }
 
 /*footer SASS codes*/
-/* line 443, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 footer {
   background-color: #006B41;
   margin: 130px auto 0 auto;
   text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  /* line 487, ../sass/screen.scss */
+  #top-container {
+    display: none;
+  }
+
+  /* line 490, ../sass/screen.scss */
+  nav#nav1 {
+    width: 90%;
+  }
+  /* line 494, ../sass/screen.scss */
+  nav#nav1 ul li a {
+    padding: 20px 30px 20px 30px;
+  }
+}
+@media only screen and (max-width: 979px) {
+  /* line 503, ../sass/screen.scss */
+  nav#nav1 {
+    display: none;
+  }
 }

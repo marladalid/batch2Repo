@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <title>Welcome to 7 Eleven</title>
     <link rel="stylesheet" href="stylesheets\screen.css" />
+
 </head>
 <body>
+
+<!--<div id="top-container">
+    <div class="icon left">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="search right">
+        <input class="border-radius" type="text">
+    </div>
+</div>-->
 <header id="header_bg"><a href="#" title="7 Elevel"><img id="logo_bg" src="img/logo.png" alt="Text/Photo"/></a></header>
         <nav id="nav1">
             <ul class="clearfix">
@@ -17,7 +29,35 @@
         </nav>
     <p id="paraBold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem sit amet tempor</p>
     <p id="paraRegular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+    <div style="text-align: center;margin-bottom: 50px;">
+        <div id="result" style="font: 20px Verdana; margin: 20px auto; padding: 20px; border: 3px solid black; width: 200px; color: white; background-color: #0044ff"></div>
+        <div style="font: 20px Verdana; margin: 20px auto; padding: 20px; border: 3px solid black; width: 500px; color: white; background-color: #0044ff">
+        <h2>Audio</h2>
+        <audio id="myAudio" controls>
+            <source src="audios/on%20top%20of%20the%20world.mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <div style="font: 20px Verdana; margin: 20px auto; padding: 20px; border: 3px solid black; width: 200px; color: white; background-color: #555757">
+            <button id="playBtn" type="button">PLAY</button>
+            <button onclick="stopAudio()" type="button">STOP</button>
+            <button id="btn1" type="button">Click Me!</button>
+        </div>
+        </div>
+    </div>
 
+
+    <div id="video-container" style="text-align: center;font: 20px Verdana; margin: 20px auto; padding: 20px; border: 3px solid black; width: 500px; color: white; background-color: #0044ff">
+        <h2>Video</h2>
+        <video id="myVideo" style="width: 500px;" controls>
+            <source src="videos/Big Buck Bunny.mp4">
+            Your browser does not support the audio tag.
+        </video>
+        <div class="controller-btn" style="text-align: center;font: 20px Verdana; margin: 20px auto; padding: 20px; border: 3px solid black; width: 200px; color: white; background-color: #555757">
+            <button id="vidPlayBtn" class="btn" type="button">PLAY</button>
+            <button on onclick="vidStopAudio()" type="button">STOP</button>
+            <button onclick="fullScreen()" type="button">FULLSCREEN</button>
+        </div>
+    </div>
     <section id="sec1">
         <article>Registration Form</article>
         <div id="form-style-2">
@@ -157,7 +197,7 @@
                 </span>
                 </label>
                 <label class="paraSmall labelDown"><span id="sp1"><input type="checkbox" value=""/></span><span id="sp2">Proin sit amet lectus venenatis, consectetur magna vitae, convallis diam. Nullam iaculis.</span></label>
-                <label class="clearfix labelDown"><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+                <label class="clearfix labelDown"><span>&nbsp;</span><input id="submitBtn" type="submit" value="Submit" /></label>
 
             </form>
             <img src="img/cards.png">
@@ -201,6 +241,9 @@
         </nav>
     </footer>
     <!--END OF FOOTER-->
+
+<script src="js/jquery-1.9.js" ></script>
+<script src="js/app.js" ></script>
 
 </body>
 </html>
