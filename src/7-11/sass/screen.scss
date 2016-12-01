@@ -262,6 +262,68 @@ article{
 }
 
 div {
+  &#results{
+    background-color: #e7e7e7;
+    padding: 10px 10px;
+    width: 600px;
+    margin: 0 auto;
+    .res-container {
+      background-color: #ffffff;
+      width: 500px;
+      margin: 10px auto;
+      padding: 10px 10px;
+      .f-right {
+        float: right;
+      }
+      .remove-btn{
+        float: right;
+        a{
+          text-decoration: none;
+          color: black;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+      }
+
+      .medium-text {
+        font: 10px 'PT Sans', sans-serif;
+        padding:5px 5px;
+      }
+      .from {
+        font: bold 20px 'PT Sans', sans-serif;
+        a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+      .message{
+        font: 13px 'PT Sans', sans-serif;
+        background-color: #efefef;
+        border-radius: 5px;
+        padding: 15px 15px;
+        height: auto;
+        margin: 10px auto;
+      }
+      .actions {
+        ul {
+
+          li {
+            display: inline-block;
+            padding: 0 5px;
+            a{
+              text-decoration: none;
+              color: #3e56ff;
+            }
+            a:hover{
+              color: #2530ff;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
   &#video-container {
 
     &.controller-btn{
