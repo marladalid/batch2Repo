@@ -260,8 +260,20 @@ article{
   border-width: 8px 7px 0 7px;
   border-color: #ff5100 transparent transparent transparent;
 }
+.center{
+  text-align: center;
+  margin: 0 auto;
+}
 
 div {
+  &#result{
+    .conversation {
+      margin: 5px 5px 5px 5px;
+      border-radius: 5px;
+      padding: 10px 10px;
+      border: 1px solid blue;
+    }
+  }
   &#results{
     background-color: #e7e7e7;
     padding: 10px 10px;
